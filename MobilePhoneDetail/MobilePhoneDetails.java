@@ -1,4 +1,4 @@
-package MobilePhoneDetails;
+package MobilePhoneDetail;
 
 class Mobile{
     String brand;
