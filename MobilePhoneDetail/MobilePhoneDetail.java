@@ -46,7 +46,7 @@ class Mobile{
     }
 }
 
-public class MobilePhoneDetails {
+public class MobilePhoneDetail {
 
     public static void main(String[] args) {
         Mobile m1 = new Mobile("Samsung", "S25", 60);
