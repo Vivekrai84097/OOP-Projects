@@ -1,23 +1,18 @@
 package MobilePhoneDetails;
 
 class Mobile{
-    private String brand;
-    private String model;
-    private int batteryPercentage;
+    String brand;
+    String model;
+    int batteryPercentage;
 
     Mobile(String brand, String model, int batteryPercentage){
         this.brand = brand;
         this.model = model;
-        
-        if(batteryPercentage >= 0 && batteryPercentage <= 100){
-            this.batteryPercentage = batteryPercentage;
-        } else {
-            System.out.println("Invalid battery percent");
-        }
+        this.batteryPercentage = batteryPercentage;
     }
 
     public void chargeBattery(){
-        System.out.println("Charging started...");
+        System.out.println("Charging Battery...");
 
         batteryPercentage += 30;
 
@@ -29,7 +24,7 @@ class Mobile{
     }
 
     public void usePhone(){
-        System.out.println("Using phone...");
+        System.out.println("Using Phone...");
 
         batteryPercentage -= 10;
 
@@ -39,7 +34,7 @@ class Mobile{
 
         System.out.println("Battery decreased to " + batteryPercentage + "%");
 
-        if(batteryPercentage < 20){
+        if(batteryPercentage <= 20){
             System.out.println("Low battery warning!");
         }
     }
@@ -52,10 +47,9 @@ class Mobile{
 }
 
 public class MobilePhoneDetails {
-    
-    public static void main(String[] args) {
-        Mobile m1 = new Mobile("Samsung", "S25", 70);
 
+    public static void main(String[] args) {
+        Mobile m1 = new Mobile("Samsung", "S25", 60);
         m1.chargeBattery();
         m1.usePhone();
         m1.displayInfo();
