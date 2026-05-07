@@ -1,13 +1,16 @@
-# School System
+# Animal Kingdom
 
 ## Overview
 This is a basic Java OOP project based on **Inheritance** and **Method Overriding**.
 
-The project represents a simple school system with:
-- Student
-- Teacher
+The project represents different animals and their sounds.
 
-Each class displays its role using overridden methods.
+Animals included:
+- Dog
+- Cat
+- Bird
+
+Each animal makes a different sound using overridden methods.
 
 ---
 
@@ -23,24 +26,26 @@ Each class displays its role using overridden methods.
 ## Class Structure
 
 ### Parent Class
-`Person`
+`Animal`
 
 Method:
-- `displayRole()`
+- `sound()`
 
 ### Child Classes
-1. `Student`
-2. `Teacher`
+1. `Dog`
+2. `Cat`
+3. `Bird`
 
-Both child classes override the `displayRole()` method.
+All child classes override the `sound()` method.
 
 ---
 
 ## Sample Output
 
 ```text
-Role : Student
-Role : Teacher
+Dog Barks
+Cat Meow
+Bird Chirps
 ```
 
 ---

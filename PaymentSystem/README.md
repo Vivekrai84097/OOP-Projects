@@ -1,13 +1,14 @@
-# School System
+# Payment System
 
 ## Overview
 This is a basic Java OOP project based on **Inheritance** and **Method Overriding**.
 
-The project represents a simple school system with:
-- Student
-- Teacher
+The project demonstrates different payment methods using polymorphism.
 
-Each class displays its role using overridden methods.
+Payment methods included:
+- UPI
+- Card
+- Cash
 
 ---
 
@@ -23,24 +24,26 @@ Each class displays its role using overridden methods.
 ## Class Structure
 
 ### Parent Class
-`Person`
+`Payment`
 
 Method:
-- `displayRole()`
+- `makePayment()`
 
 ### Child Classes
-1. `Student`
-2. `Teacher`
+1. `UPI`
+2. `Card`
+3. `Cash`
 
-Both child classes override the `displayRole()` method.
+Each child class overrides the `makePayment()` method.
 
 ---
 
 ## Sample Output
 
 ```text
-Role : Student
-Role : Teacher
+Make payment using PhonePe, GPay, Paytm
+Make payment using Credit Card/Debit Card
+Make payment using Cash
 ```
 
 ---
@@ -56,7 +59,7 @@ This project helps beginners understand:
 - Inheritance in Java
 - Method Overriding
 - Runtime Polymorphism
-- Parent and Child class relationships
+- Real-world simulation of payment systems
 
 ---
 
