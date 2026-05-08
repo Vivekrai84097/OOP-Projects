@@ -1,58 +1,39 @@
-# Bank Account System (Java OOP Project)
+# Banking Application (Java OOP)
 
-## Project Overview
-This is a basic **Bank Account System** built using **Java OOP concepts**.  
-It simulates simple banking operations like:
+## Classes
 
-- Deposit money
-- Withdraw money
-- Check current balance
-- Minimum balance rule (₹500)
+### BankAccount
+- accountNumber
+- accountHolderName
+- balance
 
----
-
-## OOP Concepts Used
-
-### 1. Encapsulation
-- `balance` is declared as `private`
-- Direct access from outside the class is restricted
-
-### 2. Constructor
-- Used to initialize account with starting balance
-
-### 3. Methods
-- `deposit()`
-- `withdraw()`
-- `checkBalance()`
+Methods:
+- deposit()
+- withdraw()
+- displayAccountDetails()
 
 ---
 
-## Features
+### SavingAccount extends BankAccount
+- interestRate
 
-### Deposit
-Adds money to account if amount is valid.
-
-### Withdraw
-Allows withdrawal only if:
-- Amount > 0
-- Remaining balance ≥ ₹500
-
-### Check Balance
-Displays total account balance.
+Methods:
+- addInterest()
 
 ---
 
-## Minimum Balance Rule
-The account must always maintain at least:
+### CurrentAccount extends BankAccount
+- interestRate
 
-### ₹500
-
-If withdrawal breaks this rule, transaction is rejected.
+Methods:
+- displayAccountDetails() (override)
 
 ---
 
-## Project Structure
-```bash
-BankAccountSystem/
- - Bank.java
- - BankAccountSystem.java
+## Main Class
+- BankingApplication
+- Creates objects and performs operations:
+  - deposit
+  - withdraw
+  - addInterest
+  - displayAccountDetails
